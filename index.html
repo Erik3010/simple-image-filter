@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Filter Image</title>
+    <style>
+        #canvas {
+            border: 1px solid black;
+        }
+
+        img {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="460px" height="320px"></canvas>
+    <!-- <canvas id="canvas" width="500px" height="500px"></canvas> -->
+    <!-- <img src="1.jpg" width="210" height="270"> -->
+    <div id="select-input">
+        <span>Image:</span>
+        <select name="image" id="image" onchange="changeValue()">
+            <option value="">Image</option>
+            <option value="1.jpg">Image 1</option>
+            <option value="2.jpg">Image 2</option>
+            <option value="3.jpg">Image 3</option>
+        </select>
+        <span>Filter:</span>
+        <select name="filter" id="filter" onchange="changeValue();">
+            <option value="">Filter</option>
+            <option value="darken">Darken</option>
+            <option value="lighten">Lighten</option>
+        </select>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="main.js"></script>
+</body>
+</html>
